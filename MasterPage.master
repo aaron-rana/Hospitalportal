@@ -1,0 +1,120 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style15
+        {
+            width: 700px;
+            height: 499px;
+
+        }
+        .style16
+        {
+            height: 431px;
+        }
+        .style17
+        {
+            height: 92px;
+        }
+        .style18
+        {
+            height: 92px;
+            width: 114px;
+        }
+        .style19
+        {
+            width: 114px;
+        }
+        .style20
+        {
+            height: 92px;
+            width: 150px;
+        }
+        .style21
+        {
+            width: 150px;
+        }
+        
+        .body{
+	margin: 0;
+	padding: 0;
+	
+		background-image: url(images/wal2.jpg);
+        width: auto;
+	height: auto;
+	color: #fff;
+	font-family: Arial;
+	font-size: 32px;
+}
+
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="height: 900px; background-image: url('/SGSproject/images/wal2.jpg');" 
+        align = "center">
+     
+       
+
+     
+     
+     
+        <table class="style15" 
+            style="background-position: center center; background-image: none; background-repeat: no-repeat; background-attachment: fixed;">
+            <tr>
+                <td class="style18">
+                    <asp:Image ID="ig_logo" runat="server" Height="92px" 
+                        ImageUrl="~/images/logo.jpg" Width="114px" />
+                </td>
+                <td class="style17" colspan="3">
+                    <asp:Label ID="lbl_sitename" runat="server" Font-Names="Cambria" 
+                        Font-Size="XX-Large" Text="Save Health"></asp:Label>
+                </td>
+                <td class="style20">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="style16" colspan="5">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="style19">
+                    <asp:HyperLink ID="hl_home" runat="server" Font-Names="Cambria">Home</asp:HyperLink>
+                </td>
+                <td>
+                    <asp:HyperLink ID="hl_aboutus" runat="server" Font-Names="Cambria">About Us</asp:HyperLink>
+                </td>
+                <td>
+                    <asp:HyperLink ID="hl_disclaimer" runat="server" Font-Names="Cambria">Disclaimer</asp:HyperLink>
+                </td>
+                <td>
+                    <asp:HyperLink ID="hl_feedback" runat="server" Font-Names="Cambria">Feedback</asp:HyperLink>
+                </td>
+                <td class="style21">
+                    <asp:HyperLink ID="hp_contact" runat="server" Font-Names="Cambria">Contact Us</asp:HyperLink>
+                </td>
+            </tr>
+        </table>
+     
+     
+     
+
+     
+     
+     
+    </div>
+    </form>
+</body>
+</html>
